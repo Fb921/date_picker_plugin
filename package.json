@@ -1,5 +1,5 @@
 {
-  "name": "date_picker_plugin",
+  "name": "date_picker_plugin_bintou_fofana",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "publishConfig": {
+    "@Fb921:registry": "https://npm.pkg.github.com"
   }
 }
