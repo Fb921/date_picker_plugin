@@ -1,5 +1,5 @@
 {
-  "name": "date_picker_plugin_bintou_fofana",
+  "name": "@fb921/date_picker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
