@@ -1,5 +1,5 @@
 {
-  "name": "@fb921/date_picker",
+  "name": "@fb921/date_picker_plugin",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
