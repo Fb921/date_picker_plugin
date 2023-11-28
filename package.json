@@ -3,6 +3,7 @@
   "version": "0.1.3",
   "private": false,
   "type": "module",
+  "main":"build/static/js/main.b9acc029.js",
   "dependencies": {
     "@babel/preset-env": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
