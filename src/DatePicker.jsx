@@ -14,7 +14,7 @@ function is_valid_date(dd){
     return (dd == d);
 }
 
-function App({id, name, dateSetter}){
+function DatePicker({id, name, dateSetter}){
 
     let last_days = [31,29,31,30,31,30,31,31,30,31,30,31];
     let months = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
@@ -134,4 +134,4 @@ function App({id, name, dateSetter}){
     )
 }
 
-export default App;
+export default DatePicker;
