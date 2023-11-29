@@ -4,7 +4,6 @@ import './index.css';
 import App from './App.jsx';
 
 function DatePicker({id, name, dateSetter}){
-    console.log("Bonjour date picker");
     return ( <App id = { id } name = { name } dateSetter = {dateSetter}/>);
 };
 
