@@ -1,9 +1,10 @@
 {
   "name": "@fb921/date_picker_plugin",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
   "type": "module",
   "main":"dist/index.bundle.js",
+  "module":"dist/index.bundle.js",
   "dependencies": {
     "@babel/preset-env": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
@@ -56,5 +57,6 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "react-scripts": "5.0.1"
-  }
+  },
+  "files":["dist"]
 }

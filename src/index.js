@@ -3,10 +3,6 @@
 // import App from './App.jsx';
 import DatePicker from './DatePicker.jsx';
 
-// function DatePicker({id, name, dateSetter}){
-//     return ( <App id = { id } name = { name } dateSetter = {dateSetter}/>);
-// };
-
 export default DatePicker;
 
 
