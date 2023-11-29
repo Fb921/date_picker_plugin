@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import DatePicker from './DatePicker.jsx';
+import App from './App.jsx';
 
-module.exports = { DatePicker }
+export function DatePicker({id, name, dateSetter}){
+    return( <App />);
+}
 
 // // If you want to start measuring performance in your app, pass a function
 // // to log results (for example: reportWebVitals(console.log))
