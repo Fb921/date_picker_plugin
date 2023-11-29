@@ -1,6 +1,6 @@
 {
   "name": "@fb921/date_picker_plugin",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
   "type": "module",
   "main":"build/static/js/main.ca24969a.js",
