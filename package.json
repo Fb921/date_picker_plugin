@@ -1,6 +1,6 @@
 {
   "name": "@fb921/date_picker_plugin",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": false,
   "type": "module",
   "main":"dist/index.bundle.js",
