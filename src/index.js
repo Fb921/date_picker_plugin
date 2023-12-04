@@ -3,6 +3,9 @@
 // import App from './App.jsx';
 import DatePicker from './DatePicker.jsx';
 
+console.log("Nous sommes dans l'index de datePicker");
+
+
 export default DatePicker;
 
 
