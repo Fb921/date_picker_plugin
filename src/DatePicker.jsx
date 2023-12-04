@@ -1,5 +1,5 @@
+import React from 'react';
 import "./App.css";
-import { useState } from 'react';
 
 //Ajouter un formateur de date
 //Ajouter un gestionnaire de langues
@@ -20,11 +20,11 @@ function DatePicker({id, name, dateSetter}){
     let months = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
     let now = new Date();
 
-    const [month,setMonth] = useState(now.getMonth());
-    const [year,setYear] = useState(now.getFullYear());
-    const [calendar,setCalendar] = useState([]);
-    const [collapse,setCollapse] = useState(false);
-    const [date,setDate] = useState("");
+    const [month,setMonth] = React.useState(now.getMonth());
+    const [year,setYear] = React.useState(now.getFullYear());
+    const [calendar,setCalendar] = React.useState([]);
+    const [collapse,setCollapse] = React.useState(false);
+    const [date,setDate] = React.useState("");
 
     function createElementFromDate(d,m,y,mo){
         let current = "current";
