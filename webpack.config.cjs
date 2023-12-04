@@ -7,9 +7,6 @@ module.exports =  {
         path: path.join(__dirname, '/dist'),
         filename: 'index.bundle.js'
     },
-    
-    target: "node",
-
     devServer: {
         static: path.resolve(__dirname, 'build'),
         port: 3010,
@@ -57,7 +54,8 @@ module.exports =  {
     resolve: {      
         alias: {          
             'react': path.resolve(__dirname, './node_modules/react'),
-            'react-dom': path.resolve(__dirname, './node_modules/react-dom'),      
+            'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+            'DatePicker': path.resolve(__dirname, './src/DatePicker.jsx')
         }  
     },  
     // externals: {      
