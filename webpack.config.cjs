@@ -4,7 +4,8 @@ module.exports =  {
     entry: path.resolve(__dirname, 'src/index.jsx'),
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'index.bundle.js'
+        filename: 'index.bundle.js',
+        library: 'DatePicker'
     },
     devServer: {
         static: path.resolve(__dirname, 'build'),
