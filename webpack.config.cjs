@@ -6,7 +6,7 @@ module.exports =  {
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'index.bundle.js',
-        libraryTarget: "module"
+        libraryTarget: "amd"
     },
     devServer: {
         static: path.resolve(__dirname, 'build'),
