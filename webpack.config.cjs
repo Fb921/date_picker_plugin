@@ -2,10 +2,11 @@
 const path = require("path");
 
 module.exports =  {
-    entry: path.resolve(__dirname, 'src/index.jsx'),
+    entry: './src/index.jsx',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'index.bundle.js'
+        filename: 'index.bundle.js',
+        libraryTarget: "module"
     },
     devServer: {
         static: path.resolve(__dirname, 'build'),
@@ -56,6 +57,9 @@ module.exports =  {
             'react': path.resolve(__dirname, './node_modules/react'),
             'react-dom': path.resolve(__dirname, './node_modules/react-dom')
         }  
+    },
+    experiments: {
+        outputModule: true
     }
     // externals: {      
     //     // Don't bundle react or react-dom      
