@@ -1,5 +1,5 @@
 import React from 'react';
-import "./App.css";
+// import "./App.css";
 
 //Ajouter un formateur de date
 //Ajouter un gestionnaire de langues
@@ -31,7 +31,7 @@ function DatePicker({id, name, dateSetter}){
         if(m != mo){
             current = "";
         }
-        return <div className={"day_element "+current} onMouseDown={function(){select_date(d,m,y)}} data-day={d} data-month={m} data-year={y} key={"e_"+d+""+m+""+y}>{d}</div>;
+        return (<div className={"day_element "+current} onMouseDown={function(){select_date(d,m,y)}} data-day={d} data-month={m} data-year={y} key={"e_"+d+""+m+""+y}>{d}</div>);
     }
 
     function select_date(d,m,y){
