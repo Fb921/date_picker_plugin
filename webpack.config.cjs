@@ -7,7 +7,7 @@ module.exports =  {
         path: path.join(__dirname, '/dist'),
         filename: 'index.bundle.js',
         library: "DatePicker",
-        libraryTarget: "commonjs2",
+        libraryTarget: "window",
         // publicPath: '/dist/',      
         // umdNamedDefine: true,  
         clean: true,
