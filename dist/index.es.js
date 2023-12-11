@@ -1,10 +1,4 @@
-'use strict';
-
-var React = require('react');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+import React from 'react';
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -57,17 +51,17 @@ function DatePicker(_ref) {
   let last_days = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   let months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
   let now = new Date();
-  const [month, setMonth] = React__default["default"].useState(now.getMonth());
-  const [year, setYear] = React__default["default"].useState(now.getFullYear());
-  const [calendar, setCalendar] = React__default["default"].useState([]);
-  const [collapse, setCollapse] = React__default["default"].useState(false);
-  const [date, setDate] = React__default["default"].useState("");
+  const [month, setMonth] = React.useState(now.getMonth());
+  const [year, setYear] = React.useState(now.getFullYear());
+  const [calendar, setCalendar] = React.useState([]);
+  const [collapse, setCollapse] = React.useState(false);
+  const [date, setDate] = React.useState("");
   function createElementFromDate(d, m, y, mo) {
     let current = "current";
     if (m != mo) {
       current = "";
     }
-    return /*#__PURE__*/React__default["default"].createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       className: "day_element " + current,
       onMouseDown: function () {
         select_date(d, m, y);
@@ -135,7 +129,7 @@ function DatePicker(_ref) {
     }
     setCalendar(calend);
   }
-  return /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("input", {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
     name: name,
     className: "date-picker_input",
     id: "date_picker_" + id,
@@ -159,12 +153,12 @@ function DatePicker(_ref) {
         setCollapse(false);
       }
     }
-  }), /*#__PURE__*/React__default["default"].createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     className: "date-selector_container",
     "data-display": collapse
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "date-selector_header"
-  }, /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("span", {
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
     className: "date-selector_arrow left",
     onClick: () => {
       if (month == 0) {
@@ -173,11 +167,11 @@ function DatePicker(_ref) {
         display_month(month - 1, year);
       }
     }
-  }, /*#__PURE__*/React__default["default"].createElement("i", {
+  }, /*#__PURE__*/React.createElement("i", {
     className: "fa fa-angle-left"
-  })), /*#__PURE__*/React__default["default"].createElement("span", {
+  })), /*#__PURE__*/React.createElement("span", {
     className: "month_container"
-  }, months[month]), /*#__PURE__*/React__default["default"].createElement("span", {
+  }, months[month]), /*#__PURE__*/React.createElement("span", {
     className: "date-selector_arrow right",
     onClick: () => {
       if (month == 11) {
@@ -186,32 +180,32 @@ function DatePicker(_ref) {
         display_month(month + 1, year);
       }
     }
-  }, /*#__PURE__*/React__default["default"].createElement("i", {
+  }, /*#__PURE__*/React.createElement("i", {
     className: "fa fa-angle-right"
-  }))), /*#__PURE__*/React__default["default"].createElement("select", {
+  }))), /*#__PURE__*/React.createElement("select", {
     value: year,
     onChange: e => {
       display_month(month, e.target.value);
     }
-  }, /*#__PURE__*/React__default["default"].createElement("option", null, "2021"), /*#__PURE__*/React__default["default"].createElement("option", null, "2022"), /*#__PURE__*/React__default["default"].createElement("option", null, "2023"), /*#__PURE__*/React__default["default"].createElement("option", null, "2024"), /*#__PURE__*/React__default["default"].createElement("option", null, "2025"), /*#__PURE__*/React__default["default"].createElement("option", null, "2026"), /*#__PURE__*/React__default["default"].createElement("option", null, "2027"), /*#__PURE__*/React__default["default"].createElement("option", null, "2028"), /*#__PURE__*/React__default["default"].createElement("option", null, "2029"), /*#__PURE__*/React__default["default"].createElement("option", null, "2029"), /*#__PURE__*/React__default["default"].createElement("option", null, "2030"))), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("option", null, "2021"), /*#__PURE__*/React.createElement("option", null, "2022"), /*#__PURE__*/React.createElement("option", null, "2023"), /*#__PURE__*/React.createElement("option", null, "2024"), /*#__PURE__*/React.createElement("option", null, "2025"), /*#__PURE__*/React.createElement("option", null, "2026"), /*#__PURE__*/React.createElement("option", null, "2027"), /*#__PURE__*/React.createElement("option", null, "2028"), /*#__PURE__*/React.createElement("option", null, "2029"), /*#__PURE__*/React.createElement("option", null, "2029"), /*#__PURE__*/React.createElement("option", null, "2030"))), /*#__PURE__*/React.createElement("div", {
     className: "date-selector_calendar"
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "calendar_container"
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "day_name"
-  }, "LUN"), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, "LUN"), /*#__PURE__*/React.createElement("div", {
     className: "day_name"
-  }, "MAR"), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, "MAR"), /*#__PURE__*/React.createElement("div", {
     className: "day_name"
-  }, "MER"), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, "MER"), /*#__PURE__*/React.createElement("div", {
     className: "day_name"
-  }, "JEU"), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, "JEU"), /*#__PURE__*/React.createElement("div", {
     className: "day_name"
-  }, "VEN"), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, "VEN"), /*#__PURE__*/React.createElement("div", {
     className: "day_name"
-  }, "SAM"), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, "SAM"), /*#__PURE__*/React.createElement("div", {
     className: "day_name"
   }, "DIM"), calendar))));
 }
 
-module.exports = DatePicker;
+export { DatePicker as default };
