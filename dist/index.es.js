@@ -42,12 +42,11 @@ function is_valid_date(dd) {
   let d = month + "/" + day + "/" + date.getFullYear();
   return dd == d;
 }
-function DatePicker(_ref) {
-  let {
-    id,
-    name,
-    dateSetter
-  } = _ref;
+function DatePicker({
+  id,
+  name,
+  dateSetter
+}) {
   let last_days = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   let months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
   let now = new Date();
